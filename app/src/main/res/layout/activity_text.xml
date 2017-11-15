@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:beyole="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#44BBFFEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2.64">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFF08F" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_pane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingTop="150dp">
+
+    </LinearLayout>
+
+    <test.com.my.view.LoveView
+        android:id="@+id/id_mylove"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        beyole:isAnimateOn="true"
+        beyole:loveColor="#FF99CC" />
+
+    <TextView
+        android:id="@+id/font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/id_mylove"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="ssssss"
+        android:textColor="@android:color/white" />
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_login_pane"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:gravity="center_vertical"
+        android:hint="L"
+        android:minHeight="50dp"
+        android:paddingTop="35dp"
+        android:singleLine="true"
+        android:textColor="#600f"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/rightView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_login_pane"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center_vertical"
+        android:hint="i love u"
+        android:textColor="#600f"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_toLeftOf="@+id/et_password"
+        android:layout_toStartOf="@+id/et_password"
+        android:text="Start"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnStart"
+        android:layout_toEndOf="@+id/et_password"
+        android:layout_toRightOf="@+id/et_password"
+        android:paddingLeft="20dp"
+        android:text="Stop"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/et_password"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:minHeight="45dp"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    <test.com.my.manager.PeriscopeLayout
+        android:id="@+id/periscope"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></test.com.my.manager.PeriscopeLayout>
+
+    <test.com.my.view.LoginView
+        android:id="@+id/owl_view"
+        android:layout_width="175dp"
+        android:layout_height="107dp"
+        android:layout_above="@id/ll_login_pane"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

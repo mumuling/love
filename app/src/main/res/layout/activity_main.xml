@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:htext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88FFF08F"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <test.com.my.view.HTextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#ffcccc"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Best wishes to you"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        htext:animateType="rainbow"
+        htext:fontAsset="fonts/Lato-Black.ttf" />
+
+
+    <RadioGroup
+        android:id="@+id/typeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:padding="6dp"
+            android:text="我"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/evaporate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="6dp"
+            android:text="你"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/fall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="6dp"
+            android:text="他"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/pixelate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="6dp"
+            android:text="它"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/sparkle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="4dp"
+            android:text="很"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/anvil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="6dp"
+            android:text="啦"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="6dp"
+            android:text="哈"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/typer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="6dp"
+            android:text="噶"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rainbow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="6dp"
+            android:text="!"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+</LinearLayout>
